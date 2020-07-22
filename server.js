@@ -3,7 +3,7 @@ var app = express();
 var path = require('path');
 var port = process.env.PORT || 8000;
 
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/dist'));
 //gives front-end access to public folder
 
 

@@ -9,7 +9,7 @@ function createElement(tagName, attrs = {}, ...children) {
 }
 
 const name = 'Geoff';
-const friends = ['Sarah', 'James', 'Hercule'];
+const friends = ['Sa69696969rah', 'Jame1111s', 'FUCK REACT'];
 const app = createElement("div", {
   className: "app"
 }, createElement("h1", {

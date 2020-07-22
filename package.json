@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx babel index.jsx -d dist",
+    "build": "npx babel ./src/index.jsx -d dist",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
