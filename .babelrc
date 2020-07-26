@@ -1,6 +1,11 @@
 {
   "plugins": [
-    ["@babel/plugin-transform-react-jsx", { "pragma": "createElement" }]
-  ],
-  "comments": false
+    [
+      "@babel/plugin-transform-react-jsx",
+      {
+        "pragma": "createElement",
+        "pragmaFrag": "'fragment'"
+      }
+    ]
+  ]
 }

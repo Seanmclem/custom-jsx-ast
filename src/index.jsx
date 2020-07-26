@@ -1,21 +1,26 @@
 function createElement(tagName, attrs = {}, ...children) {
   const elem = Object.assign(document.createElement(tagName), attrs)
   for (const child of children) {
-    if (Array.isArray(child)) elem.append(...child)
-    else elem.append(child)
+    if (Array.isArray(child)) {
+      elem.append(...child)
+    }
+    else {
+      elem.append(child)
+    }
   }
+
   return elem
 }
 
 // Setup some data
-const name = 'Geoff'
+const mainName = 'Geoff'
 const friends = ['Sarah', 'James', 'Hercule']
 
 // Create some dom elements
 const app = (
   <div className="app">
     <h1 className="title"> Hello, world! </h1>
-    <p> Welcome back, {name} </p>
+    <p> Welcome friend, {mainName} </p>
     <p>
       <strong>Your friends are:</strong>
     </p>
@@ -29,5 +34,3 @@ const app = (
 
 // Render our dom elements
 window.document.getElementById('app').replaceWith(app)
-
-let myDocument = <p>Hello, world</p>

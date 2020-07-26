@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx babel ./src/index.jsx -d dist",
-    "start": "node server.js",
+    "start": "npm run build && nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
     "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "babel-plugin-transform-jsx": "^2.0.0",
     "express": "^4.16.4",
     "nodemon": "^1.18.9"
   }
